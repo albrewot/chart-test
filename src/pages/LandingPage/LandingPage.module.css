@@ -1,0 +1,15 @@
+.LandingPage{
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px
+}
+
+.Landing__Link_Container{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+.SquareButton{
+    padding: 10px;
+    display: flex;
+    /* flex-grow: 1; */
+    width: calc(33% - 10px);
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    align-items: center;
+    border: 2px solid black;
+    background: rgb(71, 137, 223);
+    text-decoration: none;
+}
+
+.label{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}

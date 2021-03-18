@@ -1,0 +1,22 @@
+.Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(95, 95, 95)
+}
+
+.Header__Title{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.GoBack{
+    text-decoration: none;
+    color: rgb(1, 136, 160);
+    font-weight: bold;
+}

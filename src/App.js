@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import AreaChartPage from "./pages/AreaChartPage/AreaChartPage";
+import BarChartPage from "./pages/BarChartPage/BarChartPage";
+import LandingPage from "./pages/LandingPage/LandingPage"
+import LineChartPage from "./pages/LineChartPage/LineChartPage";
+import PieChartPage from "./pages/PieChartPage/PieChartPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact component={LandingPage} path="/"/>
+        <Route exact component={BarChartPage} path="/barchart"/>
+        <Route exact component={PieChartPage} path="/piechart"/>
+        <Route exact component={AreaChartPage} path="/areachart"/>
+        <Route exact component={LineChartPage} path="/linechart"/>
+      </Switch>
+    </Router>
   );
 }
 
